@@ -16,6 +16,9 @@ export function ThresholdGlobePlayground() {
   const [cellSize, setCellSize] = useState(6);
   const [fpsCap, setFpsCap] = useState(9);
   const [palette, setPalette] = useState(palettes[0]);
+  const [size, setSize] = useState(78);
+  const [positionX, setPositionX] = useState(79);
+  const [positionY, setPositionY] = useState(50);
 
   return (
     <div className="flex flex-col gap-6">
@@ -32,11 +35,13 @@ export function ThresholdGlobePlayground() {
           />
           <ThresholdGlobe
             key={palette.dot}
-            className="absolute inset-0"
             rotationSpeed={rotationSpeed}
             cellSize={cellSize}
             fpsCap={fpsCap}
             dotColor={palette.dot}
+            size={size}
+            positionX={positionX}
+            positionY={positionY}
           />
         </div>
       </div>
@@ -90,6 +95,57 @@ export function ThresholdGlobePlayground() {
             step={1}
             value={[fpsCap]}
             onValueChange={([v]) => setFpsCap(v)}
+          />
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <Label htmlFor="size">Size</Label>
+            <span className="font-mono text-xs text-muted-foreground">
+              {size}%
+            </span>
+          </div>
+          <Slider
+            id="size"
+            min={20}
+            max={130}
+            step={1}
+            value={[size]}
+            onValueChange={([v]) => setSize(v)}
+          />
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <Label htmlFor="posx">Position X</Label>
+            <span className="font-mono text-xs text-muted-foreground">
+              {positionX}%
+            </span>
+          </div>
+          <Slider
+            id="posx"
+            min={0}
+            max={100}
+            step={1}
+            value={[positionX]}
+            onValueChange={([v]) => setPositionX(v)}
+          />
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <Label htmlFor="posy">Position Y</Label>
+            <span className="font-mono text-xs text-muted-foreground">
+              {positionY}%
+            </span>
+          </div>
+          <Slider
+            id="posy"
+            min={0}
+            max={100}
+            step={1}
+            value={[positionY]}
+            onValueChange={([v]) => setPositionY(v)}
           />
         </div>
 

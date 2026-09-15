@@ -40,7 +40,7 @@ export default function Home() {
         <div className="overflow-hidden rounded-lg ring-1 ring-foreground/10">
           <div className="relative aspect-video bg-[#ff5e1f]">
             <div className="absolute inset-0 bg-gradient-to-r from-[#ff5e1f] to-transparent" />
-            <ThresholdGlobe className="absolute inset-0" />
+            <ThresholdGlobe />
           </div>
           <div className="flex flex-wrap items-center justify-between gap-3 border-t border-foreground/10 bg-card px-4 py-3">
             <div>

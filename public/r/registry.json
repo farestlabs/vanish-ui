@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "vanish-ui",
-  "homepage": "https://vanish-ui.vercel.app",
+  "homepage": "https://vanish-ui-blush.vercel.app",
   "items": [
     {
       "name": "threshold-globe",

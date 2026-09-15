@@ -2,11 +2,11 @@
 
 UI techniques reverse-engineered from real shipped products, rebuilt as installable React components — copy-paste or `npx shadcn add`.
 
-[Live site](https://vanish-ui.vercel.app)
+[Live site](https://vanish-ui-blush.vercel.app)
 
 ## Components
 
-- **[Threshold Globe](https://vanish-ui.vercel.app)** — Cloudflare's login-page dot-globe, reverse-engineered from the shipped bundle. [Deep dive](https://farestlabs.github.io/threshold-globe/) · `npx shadcn add farestlabs/vanish-ui/threshold-globe`
+- **[Threshold Globe](https://vanish-ui-blush.vercel.app)** — Cloudflare's login-page dot-globe, reverse-engineered from the shipped bundle. [Deep dive](https://farestlabs.github.io/threshold-globe/) · `npx shadcn add farestlabs/vanish-ui/threshold-globe`
 
 ## Development
 

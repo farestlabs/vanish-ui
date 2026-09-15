@@ -50,14 +50,12 @@ export default function Home() {
               <p className="text-xs text-muted-foreground">
                 Cloudflare's login-page globe — orthographic projection dithered
                 to a shimmering grid.{" "}
-                <a
-                  href="https://farestlabs.github.io/threshold-globe/"
-                  target="_blank"
-                  rel="noreferrer"
+                <Link
+                  href="/threshold-globe"
                   className="underline underline-offset-2 hover:text-foreground"
                 >
-                  Read the deep dive
-                </a>
+                  Tune it live
+                </Link>
               </p>
             </div>
             <CopyInstallCommand command="npx shadcn add farestlabs/vanish-ui/threshold-globe" />

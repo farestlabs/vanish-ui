@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "vanish-ui",
+  "homepage": "https://vanish-ui.vercel.app",
+  "items": [
+    {
+      "name": "threshold-globe",
+      "type": "registry:component",
+      "title": "Threshold Globe",
+      "description": "A rotating dot-globe reverse-engineered from Cloudflare's login-page background: a real orthographic projection of world land, dithered into a shimmering grid.",
+      "dependencies": ["d3-geo", "topojson-client", "world-atlas"],
+      "devDependencies": ["@types/d3-geo", "@types/topojson-client"],
+      "files": [
+        {
+          "path": "components/threshold-globe.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "hooks/use-threshold-globe.ts",
+          "type": "registry:hook"
+        }
+      ]
+    }
+  ]
+}

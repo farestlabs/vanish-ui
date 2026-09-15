@@ -20,6 +20,22 @@
           "type": "registry:hook"
         }
       ]
+    },
+    {
+      "name": "wave-field",
+      "type": "registry:component",
+      "title": "Wave Field",
+      "description": "A grid of cells that pulse as a deterministic traveling wave sweeps across them — direction, easing and bounce are all configurable, and the underlying wave function is framework-agnostic.",
+      "files": [
+        {
+          "path": "components/wave-field-grid.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "hooks/use-wave-field.ts",
+          "type": "registry:hook"
+        }
+      ]
     }
   ]
 }

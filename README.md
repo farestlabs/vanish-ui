@@ -7,6 +7,7 @@ UI techniques reverse-engineered from real shipped products, rebuilt as installa
 ## Components
 
 - **[Threshold Globe](https://vanish-ui-blush.vercel.app)** — Cloudflare's login-page dot-globe, reverse-engineered from the shipped bundle. [Deep dive](https://farestlabs.github.io/threshold-globe/) · `npx shadcn add farestlabs/vanish-ui/threshold-globe`
+- **[Wave Field](https://vanish-ui-blush.vercel.app)** — a grid that pulses as a deterministic traveling wave sweeps across it (direction, easing, bounce). The underlying `waveField()` function is framework-agnostic — drive a canvas, SVG, or WebGL uniform with it too. `npx shadcn add farestlabs/vanish-ui/wave-field`
 
 ## Development
 

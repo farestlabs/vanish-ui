@@ -1,5 +1,6 @@
 import { GithubLogo } from "@phosphor-icons/react/dist/ssr";
 import { ThresholdGlobe } from "@/components/threshold-globe";
+import { WaveFieldGrid } from "@/components/wave-field-grid";
 import { CopyInstallCommand } from "./copy-install-command";
 
 export default function Home() {
@@ -59,6 +60,29 @@ export default function Home() {
               </p>
             </div>
             <CopyInstallCommand command="npx shadcn add farestlabs/vanish-ui/threshold-globe" />
+          </div>
+        </div>
+
+        <div className="overflow-hidden rounded-lg ring-1 ring-foreground/10">
+          <div className="flex aspect-video items-center justify-center bg-[#0d141c] p-10">
+            <WaveFieldGrid
+              columns={14}
+              rows={7}
+              color="#4fe3d1"
+              angle={35}
+              duration={2.5}
+              frequency={0.22}
+            />
+          </div>
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-foreground/10 bg-card px-4 py-3">
+            <div>
+              <p className="font-heading text-sm font-medium">Wave Field</p>
+              <p className="text-xs text-muted-foreground">
+                A grid that pulses as a directional wave sweeps across it —
+                angle, easing and bounce are all configurable.
+              </p>
+            </div>
+            <CopyInstallCommand command="npx shadcn add farestlabs/vanish-ui/wave-field" />
           </div>
         </div>
       </section>

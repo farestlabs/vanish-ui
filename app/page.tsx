@@ -1,4 +1,5 @@
 import { GithubLogo } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 import { ThresholdGlobe } from "@/components/threshold-globe";
 import { WaveFieldGrid } from "@/components/wave-field-grid";
 import { CopyInstallCommand } from "./copy-install-command";
@@ -79,7 +80,13 @@ export default function Home() {
               <p className="font-heading text-sm font-medium">Wave Field</p>
               <p className="text-xs text-muted-foreground">
                 A grid that pulses as a directional wave sweeps across it —
-                angle, easing and bounce are all configurable.
+                angle, easing and bounce are all configurable.{" "}
+                <Link
+                  href="/wave-field"
+                  className="underline underline-offset-2 hover:text-foreground"
+                >
+                  Tune it live
+                </Link>
               </p>
             </div>
             <CopyInstallCommand command="npx shadcn add farestlabs/vanish-ui/wave-field" />
